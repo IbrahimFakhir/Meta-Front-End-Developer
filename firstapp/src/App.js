@@ -1,17 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 
-function Header() {
+function Heading() {
 
-	return (
-		<h1>Hello World</h1>
-	);
+	return <h1>This is a h1 heading</h1>
 
 }
 
 function App() {
 
-	return <Header/>
+	return <Heading/>
 
 	/*return (
 		<div className="App">
