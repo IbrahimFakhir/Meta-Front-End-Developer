@@ -9,10 +9,10 @@
 // }
 
 export default function Btn() {
-    const clickHandler = () => console.log("mouse over");
+    // const clickHandler = () => console.log("mouse over");
 
     return (
-        <button onMouseOver={clickHandler}>
+        <button onMouseOver={() => console.log("mouse over")}>
             Click Me
         </button>
     );
