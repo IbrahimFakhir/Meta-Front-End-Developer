@@ -12,15 +12,15 @@ function plus(e) {
 }; 
 
 function minus(e) { 
-	// Add the code for the minus function 
+	setResult((result) => result - Number(inputRef.current.value));
 };
 
 function times(e) { 
-	// Add the code for the plus function 
+	setResult((result) => result * Number(inputRef.current.value));
 }; 
 
 function divide(e) { 
-	// Add the code for the divide function 
+	setResult((result) => result / Number(inputRef.current.value));
 };
 
 function resetInput(e) { 
