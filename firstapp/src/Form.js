@@ -1,7 +1,22 @@
-import { useRef } from "react";
+import { useState, useRef } from "react";
 
 export default function Form() {
-    return <h1>yo</h1>
+    const [value, setValue] = useState("")
+
+    const handleChange = (e) => {
+        setValue(e.target.value)
+    }
+    
+    return (
+        <form>
+            <input
+                value={value}
+                onChange={handleChange}
+                type="text"
+            />
+            <p>Your value is {value}</p>
+        </form>
+    )
 }
 
 function UncontrolledInput() {
