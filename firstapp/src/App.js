@@ -1,10 +1,9 @@
 import Form from "./Form.js";
-
-const Nav = (props) => <ul><li>{props.first}</li></ul>
+import LiveOrders from "./LiveOrders.js";
 
 function App(props) {
 	return (
-		<Form />
+		<LiveOrders />
 	);
 }
 
